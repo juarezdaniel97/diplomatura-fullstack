@@ -2,82 +2,104 @@
 
 Bienvenido/a a este repositorio que contiene todo el material y proyectos desarrollados durante la **Diplomatura en Desarrollo Fullstack con JavaScript**, dictada por el **Nodo Tecnológico de Catamarca**.
 
-La diplomatura está organizada por **módulos progresivos** que cubren desde los fundamentos del desarrollo web hasta la creación de aplicaciones completas con tecnologías modernas del ecosistema JavaScript.
+La diplomatura está estructurada en **módulos temáticos** que abarcan desde los conceptos más básicos de desarrollo web hasta la creación de aplicaciones completas con tecnologías modernas del ecosistema JavaScript.
 
 ---
 
 ## 📚 Contenido por Módulos
 
 ### ✅ Módulo 1: Conceptos Básicos de la Web
-- Introducción al desarrollo web
-- Maquetado con **HTML5**
-- Estilado con **Tailwind CSS**
+- Introducción a HTML
+- Principios de maquetado web
+- Estilos con **Tailwind CSS**
 
 📁 Carpeta: `modulo-1`
 
 ---
 
 ### ✅ Módulo 2: Programación con JavaScript Nativo
-- Variables, estructuras de control y funciones
+- Sintaxis y estructuras del lenguaje
 - Manipulación del DOM
-- Eventos y lógica de interacción
-- Buenas prácticas de programación
+- Funciones, condicionales, arrays, objetos, bucles
+- Manejo de eventos
 
 📁 Carpeta: `modulo-2`
 
 ---
 
-### ✅ Módulo 3: Backend con Node.js
-- Introducción a Node.js
+### ✅ Módulo 3: Backend con Node.js y MongoDB
+- Introducción a **Node.js**
 - Servidores web con **Express**
-- Ruteo básico y modularización
-- Manejo de peticiones HTTP
+- Vistas dinámicas con **EJS** y **express-ejs-layouts**
+- Validaciones de formularios con **express-validator**
+- Conexión a base de datos NoSQL **MongoDB** usando **Mongoose**
+- Estructura MVC: rutas, controladores, middlewares
 
 📁 Carpeta: `modulo-3`
 
+**Paquetes utilizados:**
+- `express`
+- `ejs`
+- `express-ejs-layouts`
+- `express-validator`
+- `mongoose`
+
 ---
 
-### ✅ Módulo 4: Aplicaciones Web con Express + MongoDB
-- Motor de plantillas **EJS** y sistema de layouts con `express-ejs-layouts`
-- Validaciones de rutas con `express-validator`
-- Conexión y modelado de datos con **MongoDB** usando `mongoose`
-- Estructura MVC para separar lógica, vistas y rutas
+### ✅ Módulo 4: Frontend con React + Vite
+- Proyecto inicializado con **Vite**
+- Componentes y JSX
+- Animaciones con **framer-motion**
+- Manejo de estado con **Hooks**: `useState`, `useEffect`, `useContext`
+- Formularios dinámicos con **react-hook-form**
+- Navegación entre páginas con **react-router-dom**
+- Notificaciones y alertas con **react-toastify**
 
 📁 Carpeta: `modulo-4`
-    /modulo-1 /modulo-2 /modulo-3 /modulo-4
 
----
-
-## 🛠 Tecnologías utilizadas
-
-- HTML5 + Tailwind CSS
-- JavaScript (ES6+)
-- Node.js + Express
-- EJS (Embedded JavaScript Templates)
-- Express EJS Layouts
-- Express Validator
-- MongoDB + Mongoose
-- Git & GitHub
+**Librerías utilizadas:**
+- `react`
+- `vite`
+- `react-router-dom`
+- `react-hook-form`
+- `react-toastify`
 
 ---
 
 ## 🚀 Objetivo de la Diplomatura
 
-Formar desarrolladores/as fullstack capacitados/as para crear aplicaciones web completas, dominando tanto el desarrollo **frontend** como **backend**, integrando bases de datos y utilizando herramientas modernas de desarrollo.
+Formar desarrolladores/as capaces de construir aplicaciones web completas, comprendiendo tanto el **frontend** como el **backend**, utilizando herramientas modernas del ecosistema **JavaScript**.
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+- HTML5
+- Tailwind CSS
+- JavaScript (ES6+)
+- Node.js + Express
+- MongoDB + Mongoose
+- EJS
+- React + Vite
+- React Hooks (`useState`, `useEffect`, `useContext`)
+- React Router, React Hook Form, React Toastify
+- Git & GitHub
 
 ---
 
 ## 🤝 Agradecimientos
 
-Gracias al equipo del **Nodo Tecnológico de Catamarca** por el desarrollo de esta diplomatura y a todo el cuerpo docente por su dedicación y acompañamiento.
+Agradecemos al equipo del **Nodo Tecnológico de Catamarca** por el dictado de esta diplomatura y a todos/as los/as docentes por su compromiso con la formación tecnológica.
 
 ---
 
 ## 📂 Estructura del Repositorio
-
+/modulo-1
+/modulo-2
+/modulo-3
+/modulo-4
+README.md
 
 ---
-
-## 📌 Notas
-
-Este repositorio queda como material de referencia y consulta futura. ¡Gracias por pasar y que disfrutes el aprendizaje!
+### 📌Nota
+Este repositorio se mantendrá como guía y referencia para futuros repasos o proyectos personales.
