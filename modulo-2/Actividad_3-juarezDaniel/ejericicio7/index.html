@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Simulador de Plazos Fijos</h1>
+        <img src="./img/banco.svg" alt="Logo del Banco" class="logo">
+
+        <form id="idFormulario">
+            <label for="idCapitalIngresado">Capital a Ingresar:</label>
+            <input type="number" id="idCapitalIngresado" min="1" required>
+
+            <label for="idCantidadMeses">Cant. de Meses:</label>
+            <input type="number" id="idCantidadMeses" required>
+
+            <div class="checkbox">
+                <h3>Tasa Preferencial</h3>
+                <label>
+                    Soy cliente del banco (0.7%) más sobre la rentabilidad.
+                    <input type="checkbox" id="idClienteBanco">
+                </label>
+                <label>
+                    Plazo fijo autorenovable (0.9%) más sobre la rentabilidad.
+                    <input type="checkbox" id="idRenovacion">
+                </label>
+            </div>
+
+            <button type="submit">Calcular Rentabilidad</button>
+        </form>
+    </div>
+
+    <div id="resultado-rentabilidad">
+        <h3>RENTABILIDA CALCULADA</h3>
+        <ul class="lista-resultado" id="idLista-resultado">
+            <li>Capital Invertido: <strong>$0</strong></li>
+            <li>Rentabilidad Plazo Fijo: <strong>$0</strong></li>
+            <li>Adicional por cliente del Banco: <strong>$0 </strong></li>
+            <li>Adicional por Plazo fijo Auto Renovable (c/3meses): <strong>$0</strong></li>
+            <li>Rentabilidad Total: <strong id="idrentabilidad_total">$0</strong></li>
+            <li id="idtotal"> TOTAL (Cap. invertido + Rent. Total): <strong id="idtotal_final">$0</strong></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>
+            Aplicación desarrollada por <strong>Juárez Daniel</strong>
+            &copy; 2024 Simulador de Plazo Fijo. <br>Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+    <script src="controlador7.js"></script>
+</body>
+</html>

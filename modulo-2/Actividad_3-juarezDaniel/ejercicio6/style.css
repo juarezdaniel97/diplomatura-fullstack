@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Estilos Formulario*/
+.contenedor-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+
+/*Estilos de la Factura*/
+
+.contenedor-factura header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-factura header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.detalles-cliente {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.detalle-factura {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.detalle-factura p {
+    margin: 4px 0;
+}
+
+.tabla-factura {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabla-factura thead {
+    background-color: #f5f5f5;
+}
+
+.tabla-factura thead th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabla-factura tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabla-factura tfoot {
+    background-color: #f5f5f5;
+}
+
+.tabla-factura tfoot td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}

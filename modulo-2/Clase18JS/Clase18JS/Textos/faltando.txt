@@ -1,0 +1,29 @@
+
+1) Visualizar Contribuyentes Seleccionados por consola (listo)
+
+
+/* PENDIENTE PARA PROXIMA CLASE */
+
+    2) Mostrar una parte donde pueda totalibilizar datos.
+        - es decir usar reduce
+
+    3) Generar Componentes Dinamicos. (Selectores)
+
+    4) Colocar iconos en la tabla en función de los DATOS, en función
+    de los atributos de la tabla.
+
+
+
+------------------------------------------------------------
+PARA TERMINAR POR LOS ALUMNOS
+------------------------------------------------------------
+
+1) al PRESIONAR EL BOTON VER, mostrar en una pantalla
+aparte (popup). el resto de los datos del Contribuyente
+
+2) GENERAR ALGO SIMILAR SOBRE EL PADRON ELECTORAL
+
+
+
+
+
