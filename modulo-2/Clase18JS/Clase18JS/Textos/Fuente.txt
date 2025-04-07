@@ -1,0 +1,83 @@
+
+------------------------------------------------------------------
+1) ORIGEN DE LOS DATOS:
+------------------------------------------------------------------
+
+    Origen de los Datos Abiertos al Público 
+
+    https://www.afip.gob.ar/genericos/cInscripcion/archivoCompleto.asp
+
+------------------------------------------------------------------
+2) ESTRUCTURA ORIGINAL DEL ARCHIVO:
+------------------------------------------------------------------
+
+    Nombre	Posición	Longitud	Comentarios (*)
+
+        CUIT 	1 / 11	11	
+        DENOMINACION 	12 / 41	30	 
+        IMP GANANCIAS	42 / 43	2	'NI', 'AC', 'EX', 'NC'
+        IMP IVA	44 / 45	2	'NI', 'AC', 'EX', 'NA', 'XN', 'AN'
+        MONOTRIBUTO	46 / 47	2	"Código categoría tributaria" 'BT', 'AP', 'AC', 'AL', 'AV', 'AT', y 'A' a 'K'
+        INTEGRANTE SOC	48	1	'N' , 'S'
+        EMPLEADOR	49	1	'N', 'S'
+        ACTIVIDAD MONOTRIBUTO	51 / 52	2	´00´, ´01´, ´02´, ´03´, ´04´,´05´,´06´,´07´, ´08´, ´09´, ´10´, ´11´
+
+------------------------------------------------------------------
+3) ESTRUCTURA DEL OBJETO
+------------------------------------------------------------------
+
+    PadronAFIPId,
+    PadronAFIPCUIT,
+    PadronAFIPDenominacion,
+    PadronAFIPImpGanancias,
+    PadronAFIPImpIVA,
+    PadronAFIPMonotributo,
+    PadronAFIPIntegranteSoc,
+    PadronAFIPEmpleador,
+    PadronAFIPActividadMonotributo
+
+------------------------------------------------------------------
+4) PARA ACCEDER A LOS ATRIBUTOS
+------------------------------------------------------------------
+
+    
+    element.PadronAFIPId,
+    element.PadronAFIPCUIT,
+    element.PadronAFIPDenominacion,
+    element.PadronAFIPImpGanancias,
+    element.PadronAFIPImpIVA,
+    element.PadronAFIPMonotributo,
+    element.PadronAFIPIntegranteSoc,
+    element.PadronAFIPEmpleador,
+    element.PadronAFIPActividadMonotributo
+
+-------------------------------------------------------------------
+5) PARA MOSTRAR LOS ATRIBUTOS POR CONSOLA
+-------------------------------------------------------------------
+
+    console.log(`PadronAFIPId: ${element.PadronAFIPId}`);
+    console.log(`PadronAFIPCUIT: ${element.PadronAFIPCUIT}`);
+    console.log(`PadronAFIPDenominacion: ${element.PadronAFIPDenominacion} `);
+    console.log(`PadronAFIPImpGanancias: ${element.PadronAFIPImpGanancias}`);
+    console.log(`PadronAFIPImpIVA: ${element.PadronAFIPImpIVA}`);
+    console.log(`PadronAFIPMonotributo: ${element.PadronAFIPMonotributo}`);
+    console.log(`PadronAFIPIntegranteSoc: ${element.PadronAFIPIntegranteSoc}`);
+    console.log(`PadronAFIPEmpleador: ${element.PadronAFIPEmpleador}`);
+    console.log(`PadronAFIPActividadMonotributo: ${element.PadronAFIPActividadMonotributo}`);
+
+-------------------------------------------------------------------
+4) BUSQUEDAS PROPUESTAS 
+-------------------------------------------------------------------
+
+    4.1) Mostrar Todas las Empresas => forEach
+
+    4.2) Buscar Empresas por DENOMINACION => forEach
+
+    4.3) Buscar Empresas por CUIT y Mostrar los Datos => forEach
+
+    4.4) Filtrar y separar las Empresas que están activas en el Impuesto a Ganacias => Filter
+
+
+
+    1) Mostrar todos => console.log del vector completo
+    2) Recorrer todos (forEach) y mostrar los que en el nombre (PadronAFIPDenominacion) tenga la palabra 'ALBERTO'

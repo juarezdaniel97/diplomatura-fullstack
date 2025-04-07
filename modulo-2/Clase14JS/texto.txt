@@ -1,0 +1,19 @@
+// aqui me genero un div dinamico //
+                    let divDinamico = document.createElement("div");
+
+                    // aqui me genero una etiqueta h1 dinamica
+                    let tituloPais = document.createElement("h1");
+                    // aqui a esa etiqueta h1 le digo que se guardará el nombre del pais
+                    tituloPais.textContent = element.nombre;
+
+                    // aqui genero una etiqueta dinamica h3 //
+                    let tituloCapital = document.createElement("h3");
+                    // aqui le digo que a esa etiqueta h3 guardaré el nombre de la capital del pais
+                    tituloCapital.textContent = element.capital;
+
+                    // a la etiqueta h1 que se llama titulopais la agrego al contenedor //
+                    divDinamico.appendChild(tituloPais);
+
+                    // a la etiqueta h3 que se llama titulocapital la agrego al contenedor //
+                    divDinamico.appendChild(tituloCapital);
+                    contenedor6.appendChild(divDinamico);

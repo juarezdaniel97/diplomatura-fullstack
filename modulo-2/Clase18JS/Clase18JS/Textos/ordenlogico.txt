@@ -1,0 +1,89 @@
+
+/*----------------------------------------------*/
+/* (1ro:) importamos el Vector desde un módulo */
+/*----------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* (2do:) Manejo del Evento load, principal de la página */
+/*--------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/*(3ro:) Me vinculo a los elementos/objetos del DOM mediante constantes */
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/* (4to) Voy a crear un objeto literal que contenga el estado
+de la aplicación y para acceder a los atributos crearemos metodos
+set que permitan establecer sus valores. esto es respetando las
+buenas prácticas*/
+/*------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/* (5to:) Incorporación de Eventos del DOM a los botones ó elementos 
+con los que necesito interactuar. principalmente para obtener el estado
+de la aplicación */
+/*----------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* (6to:) Vamos a dejar Presentados los Eventos y comportamiento de los Botones */
+/*------------------------------------------------------------------------------*/
+
+    // Boton buscar por Cuit //
+
+    // Boton buscar por Nombre //
+
+     // Boton para ver los Clientes Seleccionados //
+
+/*-------------------------------------------------------*/
+/* (7mo:) Vamos a Trabajar sobre la Busqueda por Nombre  */
+/*-------------------------------------------------------*/
+                    
+    //(7.1) Realizamos una función que busque y filtre en el vector los contribuyentes que contengan el nombre
+    const vectorFiltrado = fnFiltrarPorNombre(estadoAplicacion.nombreIngresado);
+
+    //(7.2) Realizamos una función que recibe como parametro un vector filtrado y genera las filas de la tabla 
+    const filasDeTabla = fnGenerarFilasDeTabla(vectorFiltrado);         
+                        
+    //(7.3) Guardo esas filas seleccionadas en el estado de la aplicación 
+    estadoAplicacion.setfilasVisiblesDeTabla(filasDeTabla);
+
+    //(7.4) Realizamos una función que toma las filas de la tabla y las dibuja en el cuerpo de la tabla 
+    fnAgregarFilasATabla(filasDeTabla,idCuerpoTabla);                   
+
+
+    /*-------------------------------------------------------*/
+    /* (8vo:) Vamos a Trabajar sobre la Busqueda por Nombre  */
+    /*-------------------------------------------------------*/
+
+          
+        // (8.0) aqui realizamos una función para que valide el cuit //
+        if(fnValidarCuit(estadoAplicacion.cuitIngresado))
+        {
+            console.log("El Cuit Ingresado es valido");
+
+            // (8.1) Realizamos una función para filtrar por Cuit //
+            const vectorFiltrado = fnFiltrarPorCuit(estadoAplicacion.cuitIngresado);          
+                    
+            // (8.2) Se la pasamos a la función que genera las filas de la tabla //
+            const filasDeTabla = fnGenerarFilasDeTabla(vectorFiltrado);            
+                        
+                        // (8.3) Guardo esas filas seleccionadas en el estado de la aplicación 
+                        estadoAplicacion.setfilasVisiblesDeTabla(filasDeTabla);
+    
+                        // (8.4) Invocamos la función que ya esta hecha y dibuja esas filas en la tabla */
+                        fnAgregarFilasATabla(filasDeTabla,idCuerpoTabla); 
+
+                    }
+                    else
+                    {
+                        alert("el cuit ingresado es invalido");
+                    }
+        
+                     
+    /*-------------------------------------------------------------------*/
+    /*(9no) Busqueda Progresiva a medida que se va escribiendo el nombre */
+    /*-------------------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------*/
+    /* (10mo) Ver Clientes Seleccionados                                  */
+    /*-------------------------------------------------------------------*/

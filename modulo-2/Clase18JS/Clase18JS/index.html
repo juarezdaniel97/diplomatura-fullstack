@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM.CLIENTES</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>BUSQUEDA Y ADMINISTRACIÓN DE CLIENTES</h1>
+    </div>
+    <div class="contenedor">
+        <h2>BLOQUE 01 - BUSQUEDA POR CUIT</h2>
+        <input type="text" placeholder="Ingrese Cuit a buscar" id="idCuitIngresado">
+        <input type="button" value="Buscar por Cuit" id="idBtnBuscarPorCuit">
+    </div>
+    <div class="contenedor">
+        <h2>BLOQUE 02 - BUSQUEDA POR NOMBRE</h2>
+        <label for="idNombreIngresado"></label>
+        <input type="text" placeholder="Ingrese Nombre" id="idNombreIngresado">
+        <input type="button" value="Buscar por Nombre" id="idBtnBuscarPorNombre">
+        <label for="idCheckHabilitarBusquedaProgresiva">Habilitar Busqueda progresiva</label>
+        <input type="checkbox" id="idCheckHabilitarBusquedaProgresiva">
+    </div>
+    <div class="contenedor">
+        <h2>BLOQUE 03 - LISTADO DE CLIENTES</h2>
+        <input type="button" value="Ver Seleccionados" id="idBtnVerClientesSeleccionados">
+        <table border="2px">
+            <thead>
+                <th>
+                    CUIT
+                </th>
+                <th>
+                    DENOMINACION
+                </th>
+                <th>
+                    SELECCIONAR
+                </th>
+                <th>
+                    VER 
+                </th>
+            </thead>
+            <tbody id="idCuerpoTabla">
+                <tr>
+                    <td>
+                        23240106639
+                    </td>
+                    <td>
+                        MALDONADO DANIEL
+                    </td>
+                    <td>
+                        <input type="checkbox"> 
+                    </td>
+                    <td>
+                        <input type="button" value="Ver Datos">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedor">
+        <h2>BLOQUE 04 - FILTRO VARIOS</h2>
+        <label>Estado en Impuesto a las Ganancias</label>
+        <select id="idSelectorImpuestoGanancias">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Integrante de Sociedades</label>
+        <select id="idSelectorIntegranteSociedades">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Es Empleador</label>
+        <select id="idSelectorEsEmpleador">
+        </select>
+
+        <br>
+        <br>
+        
+        <input type="button" value="Filtrar" id="idBtnFiltrar">
+
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

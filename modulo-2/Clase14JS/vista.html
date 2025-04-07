@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 14 - JS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>CONTINUAMOS CON HTML DINÁMICO</h1>
+
+    <div>
+        <input type="button" value="Generar Botones Dinámicos" id="idBtn1">
+    </div>
+
+    <div id="contendor1" class="contenedor">
+
+    </div>
+
+    <div>
+        <input type="button" value="Generar Botones Dinámicos Vector" id="idBtn2">
+    </div>
+
+    <div id="contendor2" class="contenedor">
+
+    </div>
+
+    <div>
+        <input type="button" value="Generar Botones Dinamicos Vector - Objetos" id="idBtn3">
+    </div>
+
+    <div id="contendor3" class="contenedor">
+
+    </div>
+
+    <div>
+        <input type="button" value="Generar Opciones Dinamica " id="idBtn4">
+    </div>
+
+    <div id="contendor4" class="contenedor">
+        <select name="" id="idSelectorPais">
+            <option value="">ARGENTINA</option>
+            <option value="">FRANCIA</option>
+            <option value="">ESPAÑA</option>
+        </select>
+    </div>
+
+
+    <div>
+        <input type="button" value="Generar Checkbox Dinamica " id="idBtn5">
+        <input type="button" value="Checkbox presionado" id="idBtnPresionado">
+    </div>
+
+    <div id="contendor5" class="contenedor">
+        
+    </div>
+
+
+    <div>
+        <h1>Generadores de DIVs. SEPARADORES DINÁMICOS</h1>
+        <input type="button" value="Gen. Div. Dinámico" id="idBtn6">
+    </div>
+
+    <div id="contenedor6" class="contenedor">
+
+    </div>
+
+    <div>
+        <h1>TABLA DINÁMICA</h1>
+        <input type="button" value="Gen. Tabla Dinámica" id="idBtn7">
+    </div>
+
+    <div id="contenedor7" class="contenedor">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre Pais</th>
+                    <th>Capital</th>
+                    <th>Población</th>
+                    <th>Ver zona</th>
+                </tr>
+            </thead>
+
+            <tbody id="idCuerpoTabla">
+                <tr>
+                    <td>Argentina</td>
+                    <td>Buenos Aires</td>
+                    <td>47.000000</td>
+                    <td><input type="button" value="Ver zona"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+
+    <!-- <script type="module" src="/datos.js"></script> -->
+    <script src="/controlador.js" type="module"></script>
+</body>
+</html>
